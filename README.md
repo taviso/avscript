@@ -80,6 +80,22 @@ The Avast service is a protected process, which means debugging it from
 userspace is tricky. If you have kd configured, you can simply undo this
 and then debugging in userspace works fine.
 
+### Debugging
+
+Avast does not publish any symbols for their engine, but debugging with IDA or gdb
+is still possible. There are some notes on debugging Windows code from Linux in
+the [loadlibrary documentation](https://github.com/taviso/loadlibrary).
+
+If you want to use IDA, I would recommend using the `gdbserver` backend.
+
+Simply use something like:
+
+`$ gdbserver 0.0.0.0:23946 ./avscript`
+
+This works surprisingly well.
+
+![IDA screenshot](docs/debugging.png)
+
 ### Vulnerabilities
 
 If you find a vulnerability, it is likely **critical** and **wormable**.
