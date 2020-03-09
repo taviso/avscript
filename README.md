@@ -64,6 +64,16 @@ Windows, you would first do this:
 $ cat yourtestcase.js javascript.txt > ReproForWindows.js
 ```
 
+Now verify that it still does what you expect, e.g.
+
+```
+$ ./avscript ReproForWindows.js
+main(): File ReproForWindows.js` loaded, about to initialize interpreter...
+Segmentation fault (core dumped)
+```
+
+Then verify the crash reproduced on Windows.
+
 ### Protected Process
 
 The Avast service is a protected process, which means debugging it from
