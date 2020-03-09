@@ -37,8 +37,8 @@ $ sudo yum install readline-devel.i686 glibc-devel.i686 libgcc.i686
 Now you can clone this repository.
 
 ```
-$ git clone https://github.com/taviso/loadlibrary.git
-$ cd loadlibrary
+$ git clone https://github.com/taviso/avscript.git
+$ cd avscript
 $ git submodule update --init --recursive
 ```
 
