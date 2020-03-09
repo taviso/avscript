@@ -88,11 +88,11 @@ the [loadlibrary documentation](https://github.com/taviso/loadlibrary).
 
 If you want to use IDA, I would recommend using the `gdbserver` backend.
 
-Simply use something like:
+Simply use something like this, you might need to intall the gdbserver package first:
 
 `$ gdbserver 0.0.0.0:23946 ./avscript`
 
-This works surprisingly well.
+This works surprisingly well, even pseudocode breakpoints work.
 
 ![IDA screenshot](doc/debugging.png)
 

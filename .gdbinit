@@ -1,0 +1,1 @@
+source loadlibrary/.gdbinit
