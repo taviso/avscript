@@ -73,6 +73,6 @@ and then debugging in userspace works fine.
 ## Vulnerabilities
 
 If you find a vulnerability, it is likely critical and wormable, and should be
-[reported](https://www.avast.com/bug-bounty) urgently.
+[reported](https://www.avast.com/coordinated-vulnerability-disclosure) urgently.
 
 
