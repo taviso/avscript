@@ -50,7 +50,7 @@ $ make
 
 # Notes
 
-##  Reproducing Vulnerabilities on Windows
+###  Reproducing Vulnerabilities on Windows
 
 For performance reasons, Avast do not interpret every JavaScript file they
 encounter, they use a heuristic to determine if it's necessary. I've found that
@@ -64,15 +64,15 @@ Windows, you would first do this:
 $ cat yourtestcase.js javascript.txt > ReproForWindows.js
 ```
 
-## Protected Process
+### Protected Process
 
 The Avast service is a protected process, which means debugging it from
 userspace is tricky. If you have kd configured, you can simply undo this
 and then debugging in userspace works fine.
 
-## Vulnerabilities
+### Vulnerabilities
 
 If you find a vulnerability, it is likely critical and wormable, and should be
-[reported](https://www.avast.com/bug-bounty) urgently.
+[reported](https://www.avast.com/coordinated-vulnerability-disclosure) urgently.
 
 
