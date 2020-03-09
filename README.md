@@ -94,7 +94,7 @@ Simply use something like:
 
 This works surprisingly well.
 
-![IDA screenshot](docs/debugging.png)
+![IDA screenshot](doc/debugging.png)
 
 ### Vulnerabilities
 
