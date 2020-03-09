@@ -1,0 +1,3 @@
+[submodule "loadlibrary"]
+	path = loadlibrary
+	url = https://github.com/taviso/loadlibrary.git
