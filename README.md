@@ -12,7 +12,7 @@ Despite being highly privileged and processing untrusted input by design, it is
 unsandboxed and has poor mitigation coverage. Any vulnerabilities in this
 process are critical, and easily accessible to remote attackers.
 
-So.. maybe not great that it includes a custom JavaScript interpreter....????
+So.. maybe not great that it includes a custom JavaScript interpreter....???? 🙃
 
 ![screenshot](doc/screenshot.png)
 
@@ -72,7 +72,8 @@ and then debugging in userspace works fine.
 
 ### Vulnerabilities
 
-If you find a vulnerability, it is likely critical and wormable, and should be
-[reported](https://www.avast.com/coordinated-vulnerability-disclosure) urgently.
+If you find a vulnerability, it is likely **critical** and **wormable**.
+
+🔥 Please [report it](https://www.avast.com/coordinated-vulnerability-disclosure) urgently. 🔥
 
 
