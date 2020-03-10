@@ -87,8 +87,13 @@ commands](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/set
 
 ![screenshot](doc/protected.png)
 
+There is also a setting under "Troubleshooting" called "Enable Self-Defense"
+that should be disabled. I believe this setting disables hooking `OpenProcess()`
+in the SSDT, where they normally blacklist their own process.
+
 You may need to temporarily disable "shields" in the Avast UI while you
-attach so that filesystem operations don't block.
+attach so that filesystem operations don't deadlock while the service is
+suspended.
 
 ### Debugging
 
