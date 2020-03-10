@@ -16,23 +16,12 @@
 # define _GNU_SOURCE
 #endif
 
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <sys/mman.h>
-#include <sys/unistd.h>
-#include <asm/unistd.h>
-#include <fcntl.h>
 #include <iconv.h>
-#include <unistd.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-#include <assert.h>
-#include <string.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <stdarg.h>
 #include <err.h>
 #include <mcheck.h>
 #include <readline/readline.h>
@@ -218,10 +207,7 @@ int main(int argc, char **argv, char **envp)
         .field_B4 = "",
         .field_CC = "",
     };
-    PIMAGE_DOS_HEADER DosHeader;
-    PIMAGE_NT_HEADERS PeHeader;
     struct pe_image image = {
-        .entry  = NULL,
         .name   = "algo.dll",
     };
 
@@ -235,10 +221,6 @@ int main(int argc, char **argv, char **envp)
 
     // Handle relocations, imports, etc.
     link_pe_images(&image, 1);
-
-    // Fetch the headers to get base offsets.
-    DosHeader   = (PIMAGE_DOS_HEADER) image.image;
-    PeHeader    = (PIMAGE_NT_HEADERS)(image.image + DosHeader->e_lfanew);
 
     if (get_export("engine_GlobalStart", &engine_GlobalStart)) {
         LogMessage("failed to resolve required module exports");
