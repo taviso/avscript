@@ -80,6 +80,12 @@ The Avast service is a protected process, which means debugging it from
 userspace is tricky. If you have kd configured, you can simply undo this
 and then debugging in userspace works fine.
 
+A quick and easy solution that works on 32-bit is to do this (note that
+[PatchGuard](https://en.wikipedia.org/wiki/Kernel_Patch_Protection) won't
+permit this on x64).
+
+![screenshot](doc/protected.png)
+
 ### Debugging
 
 Avast does not publish any symbols for their engine, but debugging with IDA or gdb
