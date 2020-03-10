@@ -333,7 +333,7 @@ int main(int argc, char **argv, char **envp)
         }
 
         jsint = jsint_constructor(jsint, 0);
-        jsint_constructor(jsint, 0);
+
         jsint_init(jsint, jsparams);
 
         result = jsint_run(jsint, scanbuf, strlen(scanbuf), 0, true);
