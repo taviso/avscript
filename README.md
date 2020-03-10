@@ -86,6 +86,9 @@ permit this on x64).
 
 ![screenshot](doc/protected.png)
 
+You may need to temporarily disable "shields" in the Avast UI while you
+attach so that filesystem operations don't block.
+
 ### Debugging
 
 Avast does not publish any symbols for their engine, but debugging with IDA or gdb
