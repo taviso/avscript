@@ -82,9 +82,13 @@ and then debugging in userspace works fine.
 
 A quick and easy solution that works on 32-bit is to do this (note that
 [PatchGuard](https://en.wikipedia.org/wiki/Kernel_Patch_Protection) won't
-permit this on x64).
+permit this on x64, but you can do something similar with [breakpoint
+commands](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/setting-a-conditional-breakpoint)).
 
 ![screenshot](doc/protected.png)
+
+You may need to temporarily disable "shields" in the Avast UI while you
+attach so that filesystem operations don't block.
 
 ### Debugging
 
