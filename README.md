@@ -1,5 +1,8 @@
 # Avast Antivirus JavaScript Interpreter
 
+> NOTE: On 03/11/2020 Avast [announced](https://twitter.com/avast_antivirus/status/1237685343580753925)
+> announced they had decided to disable this interpreter globally!
+
 The main Avast antivirus process is called AvastSvc.exe, which runs as SYSTEM.
 
 ![AvastSvc.exe](doc/avastsvc.png)
